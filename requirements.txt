@@ -1,0 +1,8 @@
+python-dotenv==1.0.0
+langchain==0.3.7
+langchain-community==0.3.7
+langchain-core==0.3.19
+langchain-openai==0.2.9
+openai==1.54.5
+faiss-cpu==1.9.0.post1
+langchain-chroma==0.1.4
