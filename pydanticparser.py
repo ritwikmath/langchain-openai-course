@@ -22,7 +22,7 @@ class Joke(BaseModel):
         return field
 
 
-# j = Joke(**{"setup": "Q?", "punchline": "A"})
+# j = Joke(**{"setup":   "Q?", "punchline": "A"})
 # j.model_json_schema()
 # print(j)
 

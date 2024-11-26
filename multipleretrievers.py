@@ -76,7 +76,7 @@ def retrieval(search: Search) -> str:
     final_prompt = ChatPromptTemplate.from_template(
         """
         You are to find an answer from the following context:  
-        {context}  
+        {context}
         
         If the requested item is not explicitly mentioned in the context, try to identify if there is a similar item in the list that matches its category or characteristics. Provide the closest match where applicable.  
         
