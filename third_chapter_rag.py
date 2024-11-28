@@ -33,9 +33,11 @@ split_documents = text_splitter.split_documents(docs)
 
 vector_store = Chroma.from_documents(split_documents, embedding=OpenAIEmbeddings())
 
-llm = OpenAI()
+llm = OpenAI(
+    temperature=0.2
+)
 
-query = "How long I have to wait for support to respond? Only respond with waiting time"
+query = "How long I have to wait for support to respond?"
 
 retriever = vector_store.as_retriever()
 
